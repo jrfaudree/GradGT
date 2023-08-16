@@ -23,7 +23,7 @@ Log in to [Canvas at UAF](https://canvas.alaska.edu/courses) for:
 
 * Read the [Syllabus](assets/general/M663_f23_syllabus.pdf).
 
-* See the [Schedule](https://docs.google.com/spreadsheets/d/e/2PACX-1vRljb1-0lJ9CtIRxdMsZyeBSeQeEZfkl7WBYEpcGmgYnoMynhaaJGCkPKR3t-NxstMAChrq4HY-ms9D/pubhtml?gid=0&single=true).  Check it often to find out what happens next.
+* See the [Schedule](https://docs.google.com/spreadsheets/d/e/2PACX-1vRWbn6Gebs9tzDxE4ln3Gy21Adw470oM2QO0rgM8hTkG0CdnCsbz2_rS_oF1H4I2zDSEMHSe50lgIbA/pubhtml).  Check it often to find out what happens next.
 
 * The textbook is **Graph Theory** by Reinhard Diestel, 3rd edition or later. A webpage for the text can be found [here](https://diestel-graph-theory.com/)
 
