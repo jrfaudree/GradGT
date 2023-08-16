@@ -1,0 +1,24 @@
+sidenavtitle: 'Math 663'
+
+docs:
+
+- title: Syllabus
+  url: assets/general/M663_f23_syllabus.pdf  # rebuild by "make syllabus.pdf" in assets/general/
+
+- title: Schedule
+  url: https://docs.google.com/spreadsheets/d/e/2PACX-1vRWbn6Gebs9tzDxE4ln3Gy21Adw470oM2QO0rgM8hTkG0CdnCsbz2_rS_oF1H4I2zDSEMHSe50lgIbA/pubhtml?gid=0&single=true
+  
+- title: Homework
+  url: homework.html
+
+- title: Exams
+  url: exams.html
+
+- title: More Resources
+  url: resources.html
+  
+- title: Project Info
+  url: project.html
+
+- title: LaTeX Help
+  url: techHelp.html
