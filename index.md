@@ -27,7 +27,7 @@ Log in to [Canvas at UAF](https://canvas.alaska.edu/courses) for:
 
 * The textbook is **Graph Theory** by Reinhard Diestel, 3rd edition or later. A webpage for the text can be found [here](https://diestel-graph-theory.com/)
 
-
-
 ---
 _Site design derived from the [coordinated Calc I website](https://uaf-math251.github.io/), an original [Jekyll](https://jekyllrb.com/) design by [David Maxwell](https://damaxwell.github.io/)._
+
+[<img src="assets/images/GitHub-Mark-32px.png" align="right">](https://github.com/jrfaudree/GradGT "github repository for this site")
