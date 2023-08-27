@@ -21,4 +21,4 @@ docs:
   url: project.html
 
 - title: LaTeX Help
-  url: techHelp.html
+  exturl: https://jrfaudree.github.io/latex/latex.html
