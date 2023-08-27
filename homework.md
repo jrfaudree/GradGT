@@ -4,7 +4,7 @@ title: Homework
 ---
 
 ## Homework
- * Seeking help from your teacher and ollaboration with your peers is encouraged. However, you should write up your solutions independently.
+ * Seeking help from your teacher and collaboration with your peers is encouraged. However, you should write up your solutions independently.
  * Homework should be submitted in Canvas.
 
 

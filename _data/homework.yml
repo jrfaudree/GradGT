@@ -1,6 +1,9 @@
 semester: Fall 2023
-home: assets/homework
+home: assets/homework/
 homework:
 - name: Homework 1
   due: 11:59pm Wed 9/7
-  url: M663f23_hw1
+  url: M663f23_hw1.pdf
+#- name: Homework 2
+#  due: 11:59pm XXX
+#  url: xxx.pdf
