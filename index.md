@@ -7,7 +7,7 @@ Welcome to the homepage of **Math 663 Graph Theory**, Fall 2023, in the [Dept. o
 
 #### Instructor:  [Jill Faudree](http://jrfaudree.github.io/)
 
-Email me at [jrfaudree@alaska.edu](mailto:jrfaudree@alaska.edu).  I hold [office hours](http://jrfaudree.github.io/OffHrs.htm) in Chapman 306B.
+Email me at [jrfaudree@alaska.edu](mailto:jrfaudree@alaska.edu).  I hold [office hours](https://docs.google.com/spreadsheets/d/e/2PACX-1vSPkx0I1WQikJjmR8qs8wpf2oWcwO8CFS2VwCZYsdusMDkxTIQuOVwcV8LfAtsDtUGoj49xCS1mOIrW/pubhtml?gid=0&single=true) in Chapman 306B.
 
 ### Canvas course page
 
