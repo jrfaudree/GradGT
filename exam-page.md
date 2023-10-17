@@ -9,8 +9,8 @@ Links to exams (old and new) will be posted here.
 
 - Midterm I
   - [review](assets/tests/M663f23_M1-review.pdf)
-  - [blank]()
-  - [solutions]()
+  - [blank](assets/tests/M663f23_M1.pdf)
+  - [solutions](assets/tests/M663f23_M1-s.pdf)
 
 ## Old Midterms, Final Exams, MS Comp Exams
 
