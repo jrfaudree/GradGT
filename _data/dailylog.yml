@@ -52,4 +52,9 @@ dailylog:
 - name: Section 4.4
   date: Mon 16 Oct
   url: InClassNotes-m-16-oct.pdf
-  
+- name: Section 4.4
+  date: Wed 18 Oct
+  url: InClassNotes-18-0ct-w.pdf
+- name: Brooks' Theorem
+  date: Fri 20 Oct
+  url: M663f23_Brooks-Thm.pdf
