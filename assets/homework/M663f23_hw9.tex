@@ -96,7 +96,8 @@
 	\end{tikzpicture}
 
 	
-	\item Given $n \in \mathbb{N}$, find a capacity function for the netweork below such that the algorithm from the proof of the max-flow min-cut theorem (aka Ford-Fulkerson Theorem) will need more than $n$ augmenting paths if the algorithm consistently chooses the path badly.	\\
+	\item Given $n \in \mathbb{N}$, find a capacity function for the network below such that the algorithm from the proof of the max-flow min-cut theorem (aka Ford-Fulkerson Theorem) will need more than $n$ augmenting paths if the algorithm consistently chooses the path badly.	\\
+An \emph{augmenting} path is an $st$-path such that every (directed) edge on the path has available capacity. That is $c(\overrightarrow{e}) > f(\overrightarrow{e}).$ 
 	
 	\begin{tikzpicture}[scale=1,every node/.style={draw,circle, inner sep=.05 cm}]
 	\node (s) at (0,0){$s$};
@@ -113,7 +114,7 @@ Let $a$ and $b$ be two distinct vertices of the simple graph $G$. If $ab \not \i
 \end{quote}
 
 \item Determine the value of $ex(n,K_{1,r})$ for all $r$ and $n$. (Assume that $n>r.$)
-\item Show that every connected graph contains a path or a cycle of length at least $\min\{2\delta, |G|\}.$
+\item Show that every connected graph on at least three vertices contains a path or a cycle of length at least $\min\{2\delta, |G|\}.$
 \item Prove the Erd\"{o}s-S\"os Conjecture for the case when the tree is a path. (Hint: use the previous problem.
 \end{enumerate}
 \end{document}
