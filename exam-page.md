@@ -14,8 +14,9 @@ Links to exams (old and new) will be posted here.
  
 - Midterm II
   - [review](assets/tests/M663f23_M2-review.pdf)
-  - [blank]()
-  - [solutions]()
+  - [blank](M663f23_M2.pdf)
+  - [1-5 solutions](M663f23_M2-s.pdf)
+  - [6 solutions](M2-last-page.pdf)
 
 ## Old Midterms, Final Exams, MS Comp Exams
 
