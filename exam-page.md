@@ -17,6 +17,11 @@ Links to exams (old and new) will be posted here.
   - [blank](assets/tests/M663f23_M2.pdf)
   - [1-5 solutions](assets/tests/M663f23_M2-s.pdf)
   - [6 solutions](assets/tests/M2-last-page.pdf)
+ 
+- Final Exam
+  - [review](assets/tests/M663f23_FE-review.pdf)
+  - [blank]()
+  - [solutions]()
 
 ## Old Midterms, Final Exams, MS Comp Exams
 
