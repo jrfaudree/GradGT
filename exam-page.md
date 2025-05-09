@@ -20,8 +20,8 @@ Links to exams (old and new) will be posted here.
  
 - Final Exam
   - [review](assets/tests/M663f23_FE-review.pdf)
-  - [blank]()
-  - [solutions]()
+  - [blank](assets/tests/M663f23_FE.pdf)
+  - [solutions](assets/tests/M663f23_FE-s.pdf)
 
 ## Old Midterms, Final Exams, MS Comp Exams
 
