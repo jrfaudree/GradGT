@@ -1,0 +1,94 @@
+% !TEX TS-program = pdflatexmk
+\documentclass[12pt]{article}
+
+% Layout.
+\usepackage[top=.75in, bottom=0.75in, left=.75in, right=.75in, headheight=1in, headsep=6pt]{geometry}
+
+% Fonts.
+\usepackage{mathptmx}
+\usepackage[scaled=0.86]{helvet}
+\renewcommand{\emph}[1]{\textsf{\textbf{#1}}}
+
+% Misc packages.
+\usepackage{amsmath,amssymb,latexsym}
+\usepackage{graphicx,tikz}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{tabularx,colortbl}
+\usepackage{enumitem}
+%to make tikz pics work
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows}
+\newcommand{\midarrow}{\tikz \draw[-triangle 90] (0,0) -- +(.1,0);}
+
+\usepackage[colorlinks=true]{hyperref}
+
+% Paragraph spacing
+\parindent 0pt
+\parskip 6pt plus 1pt
+\def\tableindent{\hskip 0.5 in}
+\def\ts{\hskip 1.5 em}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\lhead{\large\sf\textbf{MATH 663 }}
+\rhead{\large\sf\textbf{Fall 2023}}
+\chead{\large\sf\textbf{Final Exam}}
+
+\newcommand{\localhead}[1]{\par\smallskip\textbf{#1}\nobreak\\}%
+\def\heading#1{\localhead{\large\emph{#1}}}
+\def\subheading#1{\localhead{\emph{#1}}}
+
+%% Special Math Symbol shortcuts
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\rad}{\text{rad}}
+\newcommand{\diam}{\text{diam}}
+
+%\newenvironment{clist}%
+%{\bgroup\parskip 0pt\begin{list}{$\bullet$}{\partopsep 4pt\topsep 0pt\itemsep -2pt}}%
+%{\end{list}\egroup}%
+
+\usetikzlibrary{calc,arrows.meta}
+\usetikzlibrary{arrows}
+\newcommand{\marrow}{\tikz \draw[-triangle 90] (0,0) -- +(.1,0);}
+
+
+\begin{document}
+
+Directions:\\
+
+• You have 2 hours to complete all 6 of the problems below.
+• Books, notes or other aids are not allowed.
+• To receive full credit, proofs must be formal.
+• Paper will be provided for you. Please put your answer to each problems on a separate sheet of
+paper.
+
+\begin{enumerate}
+
+\item Prove that every automorphism of a tree fixes a vertex or an edge.
+
+\item Let $G$ be a simple planar graph on $n$ vertices with girth $k.$ Prove that $G$ has at most $(n-2)\frac{k}{k-2}$ edges.
+
+\item Let $G=(A \cup B, E)$ be a bipartite graph with partite sets $A$ and $B$ such that $|A|=|B|$ and $E\not= \emptyset.$ Prove that if $|N(X)| > |X|$ for every nonempty $X \subseteq A,$ then every edge of $G$ lies on a 1-factor.\\
+
+
+\item Let $G$ be a graph on $n$ vertices.
+	\begin{enumerate}
+	\item Prove that if $\delta(G) \geq 3,$ then $G$ contains a cycle with a chord. Recall that a \textbf{chord} in a cycle is an edge between two vertices on the cycle that is not a cycle edge.\\
+		
+	\item Prove that if $n\geq 4$ and $|E(G)| \geq 2n-3,$ then $G$ contains a chord.\\
+	
+	\end{enumerate} 
+	
+	\item Prove that in e very 2-coloring of the edges of $K_n$ (for $n\geq 3),$ ther is either a monochromatic hamiltonian cycle or a hamiltonian cycle with exactly two monochromatic arcs. (By ``exactly two monochromatic arcs" we mean that the hamiltonian cycle can be labelled $C=v_1v_2 \cdots v_nv_1$ such that all the edges on the path $v_1v_2\cdots v_i$ are one color and the remaining edges $v_iv_{i+1} \cdots v_nv_1$ are the same color.)\\
+	
+	
+	
+\item Let $S_1,S_2, \cdots,S_m$ be a collection of finite sets such that $2 \leq |S_1| \leq |S_2| \leq \cdots \leq |S_m|.$ Define a graph $G$ with vertex set $V= S_1 \times S_2 \times \cdots \times S_m$ such that $m$-tuples $u$ and $v$ are adjacent if and only of they differ in every coordinate. Determine $\chi(G).$\\
+
+
+
+\end{enumerate}
+
+\end{document}

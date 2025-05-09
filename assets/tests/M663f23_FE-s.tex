@@ -1,0 +1,128 @@
+% !TEX TS-program = pdflatexmk
+\documentclass[12pt]{article}
+
+% Layout.
+\usepackage[top=.75in, bottom=0.75in, left=.75in, right=.75in, headheight=1in, headsep=6pt]{geometry}
+
+% Fonts.
+\usepackage{mathptmx}
+\usepackage[scaled=0.86]{helvet}
+\renewcommand{\emph}[1]{\textsf{\textbf{#1}}}
+
+% Misc packages.
+\usepackage{amsmath,amssymb,latexsym}
+\usepackage{graphicx,tikz}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{tabularx,colortbl}
+\usepackage{enumitem}
+%to make tikz pics work
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows}
+\newcommand{\midarrow}{\tikz \draw[-triangle 90] (0,0) -- +(.1,0);}
+
+\usepackage[colorlinks=true]{hyperref}
+
+% Paragraph spacing
+\parindent 0pt
+\parskip 6pt plus 1pt
+\def\tableindent{\hskip 0.5 in}
+\def\ts{\hskip 1.5 em}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\lhead{\large\sf\textbf{MATH 663 }}
+\rhead{\large\sf\textbf{Fall 2023}}
+\chead{\large\sf\textbf{Final Exam}}
+
+\newcommand{\localhead}[1]{\par\smallskip\textbf{#1}\nobreak\\}%
+\def\heading#1{\localhead{\large\emph{#1}}}
+\def\subheading#1{\localhead{\emph{#1}}}
+
+%% Special Math Symbol shortcuts
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\rad}{\text{rad}}
+\newcommand{\diam}{\text{diam}}
+
+%\newenvironment{clist}%
+%{\bgroup\parskip 0pt\begin{list}{$\bullet$}{\partopsep 4pt\topsep 0pt\itemsep -2pt}}%
+%{\end{list}\egroup}%
+
+\usetikzlibrary{calc,arrows.meta}
+\usetikzlibrary{arrows}
+\newcommand{\marrow}{\tikz \draw[-triangle 90] (0,0) -- +(.1,0);}
+
+
+\begin{document}
+
+Jill's Solutions
+
+\begin{enumerate}
+
+\item Prove that every automorphism of a tree fixes a vertex or an edge.
+
+Proof: (by induction on the number of vertices).  Let $T$ be a tree on $n$ vertices. \\
+Base Step: If $n=1,$ every automorphisms fixes the one vertex and the statement holds. If $n=2,$ then each of the two automorphisms fixes the one edge and the result holds. \\
+Inductive Step: Suppose the result hold for all trees on less than $n$ vertices where $n\geq 3.$ Let $f: V \to V$ be an automorphism of $T$ and let $L$ be the set of leaves of $T.$ Observe that since $f$ is an automorphism, $f(L)=L$ and $f(V-L)=V-L.$ Thus, $f \vert_{V-L}: (V-L) \to (V-L)$ is an automorphism of the tree $T-L$ which by the inductive hypothesis must fix a vertex or an edge. Thus, $T$ must fix the same vertex or edge. 
+
+\item Let $G$ be a simple planar graph on $n$ vertices with girth $k.$ Prove that $G$ has at most $(n-2)\frac{k}{k-2}$ edges.
+
+Proof: Suppose $G$ be a simple planar graph on $n$ vertices with girth $k.$ Observe that is is sufficient to demonstrate that upper bound holds for each component of $G,$ say $C.$ Since $C$ is planar and connected, Euler's formula applies. That is, $2=n-m+f$ where $n$ is the number of vertices, $m$ is the number of edges, and $f$ is the number of faces. \\
+Since $G$ has girth $k,$ we know $kf \leq 2m$ or $f\leq 2m/k.$ Plugging into Euler's formula gives: $2 \leq n-m+2m/k.$ Solving for $m$ gives: $m\leq k(n-1)/(k-2).$\\
+
+\item Let $G=(A \cup B, E)$ be a bipartite graph with partite sets $A$ and $B$ such that $|A|=|B|$ and $E\not= \emptyset.$ Prove that if $|N(X)| > |X|$ for every nonempty $X \subseteq A,$ then every edge of $G$ lies on a 1-factor.\\
+
+Proof: Let $ab \in E.$ It is sufficient to show that $G-\{a,b\}$ has a 1-factor. Let $A'=A-a,$ $B'=B-b$, and $G'=G-\{a,b\}.$ Our strategy is to apply Konig's Theorem. Specifically, we need to show that for every $X' \subseteq A',$ $|N_{G'}(X')| \geq |X'|.$\\
+
+Let $X'$ be an arbitrary subset of $A'.$ Using the fact that $X' \subset A$ and the hypothesis, we know that $|N_{G}(X')| > |X'|.$ Moreover, $ N_{G}(X') \subseteq B = B' \cup b.$ Thus, $|N_{G'}(X')| \geq |N_{G}(X')| -1 > |X'|-1.$ Since all the numbers here are integers, $|N_{G'}(X')| \geq |X'|.
+$ and the result follows.\\
+
+\item Let $G$ be a graph on $n$ vertices.
+	\begin{enumerate}
+	\item Prove that if $\delta(G) \geq 3,$ then $G$ contains a cycle with a chord. Recall that a \textbf{chord} in a cycle is an edge between two vertices on the cycle that is not a cycle edge.\\
+	
+	Proof: Let $P=v_0v_1 \cdots v_k$ be a longest path in $G.$ Since $\delta(G) \geq 3,$ it follows that $v_0$ has two neighbors not including $v_1.$ Since P is a longest path, those neighbors must lie on $P$, say $v_i$ and $v_j$ where $i<j.$ Then, edge $v_0v_i$ is a chord in cycle $v_0v_1v_2 \cdots v_jv_0.$\\
+	
+	\item Prove that if $n\geq 4$ and $|E(G)| \geq 2n-3,$ then $G$ contains a chord.\\
+	
+	Proof: (by induction on $n$) Suppose $n\geq 4$ and $|E(G)| \geq 2n-3.$\\
+	Base Step: If $n=4,$ then $G$ has at least 5 edges. Thus, $G=K_4-e$ and the result follows.\\
+	Inductive Step: Suppose the result holds for all graphs on fewer than $n$ vertices.  If $\delta(G) \geq 3,$ then $G$ has a cycle with a chord by part (a). If $\delta(G) \leq 2,$ then there exists some vertex $x$ such that $d(x) \leq 2.$ Thus, $|E(G -x)| \geq (2n-3)-2=2n-5=2(n-1)-3.$ \\
+	
+	By the inductive hypothesis, the graph $G-x$ has a cycle with a chord and the result follows.\\
+	\end{enumerate} 
+	
+	\item Prove that in e very 2-coloring of the edges of $K_n$ (for $n\geq 3),$ ther is either a monochromatic hamiltonian cycle or a hamiltonian cycle with exactly two monochromatic arcs. (By ``exactly two monochromatic arcs" we mean that the hamiltonian cycle can be labelled $C=v_1v_2 \cdots v_nv_1$ such that all the edges on the path $v_1v_2\cdots v_i$ are one color and the remaining edges $v_iv_{i+1} \cdots v_nv_1$ are the same color.)\\
+	
+	Proof: (induction on $n$) \\
+	Base Step: The result holds by inspection for $K_3.$\\
+	Inductive Step: Suppose the result holds for all complete graphs on fewer than $n$ vertices.  Let $c:E(K_n) \to \{0,1\}$ be a 2-coloring of $K_n.$ Let $x$ be an arbitrary vertex of $K_n.$ By the inductive hypothesis, the induced coloring $K_n-x$ must contain a monochromatic cycle or one with exactly two monochromatic arcs. \\
+	
+	Suppose $K_n-x$ contains a monochromatic cycle, $C.$ Pick an arbitrary pair of consecutive vertices on $C$, say $y$ and $z.$ Then, no matter how edges $xy$ and $xz$ are colored, the result will follow.
+	
+	Suppose $K_n-x$ contains a cycle with exactly two monochromatic arcs, say $C=v_1v_2 \cdots v_nv_1$ such that all the edges on the path $v_1v_2\cdots v_i$ are colored red and the remaining edges $v_iv_{i+1} \cdots v_nv_1$ are colored blue.\\
+	
+	Consider the edge $e=xv_i.$ If $e$ is colored red, then no matter how edge $e^+=xv_{i+1}$ is colored, $x$ can be added to $C$ and maintain two monochromatic arcs. On the other hand, if $e$ is colored blue, then no matter how $e^-=xv_{i-1}$ is colored, $x$ can be added to $C$ and maintain two monochromatic arcs.
+	
+\item Let $S_1,S_2, \cdots,S_m$ be a collection of finite sets such that $2 \leq |S_1| \leq |S_2| \leq \cdots \leq |S_m|.$ Define a graph $G$ with vertex set $V= S_1 \times S_2 \times \cdots \times S_m$ such that $m$-tuples $u$ and $v$ are adjacent if and only of they differ in every coordinate. Determine $\chi(G).$\\
+
+Claim: $\chi(G) = |S_1|$\\
+
+Let $k= |S_1|$ and $a_1,a_2,\cdots,a_k$  be the set of elements in $S_1.$ Define  $f: V(G) \to \{a_1,a_2,\cdots,a_k\}$ by 
+
+$$f( \textbf{x})=f(x_1,x_2,\cdots,x_m)=x_1.$$
+
+First, we show that $f$ is a \emph{proper} $k$-coloring of $G$. \\
+
+Let $\textbf{x},\textbf{y} \in V$ such that $\textbf{x}\textbf{y} \in E(G).$ Then, by the definition of $G$, $x_1 \not = y_1.$ Thus, $f(\textbf{x})=x_1 \not = y_2=f(\textbf{y}).$
+
+Last, we show that $G$ is not $k-1$-colorable.\\
+
+It is sufficient to find a $K_k.$ Observe that the set of vertices below form a clique on $k$ vertices, where $s_{ij}$ is the $j$th element in set $S_i:$\\
+
+$$\{(s_{11},s_{21},s_{31}, \cdots, s_{m1}),(s_{12},s_{22},s_{32}, \cdots, s_{m2}),(s_{13},s_{23},s_{33}, \cdots, s_{m3}), \cdots, (s_{1k},s_{2k},s_{3k}, \cdots, s_{mk})  \}$$
+
+\end{enumerate}
+
+\end{document}
